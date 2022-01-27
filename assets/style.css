@@ -161,14 +161,12 @@ button,
 
 .header-top h1 {
 	font-family: 'Press Start 2P', cursive;
-	/* font-family: 'Common Pixel', sans-serif; */
-	font-size: 72px;
+	font-size: 64px;
 }
-
 
 .header-menu {
 	flex: 50%;
-	padding: 12vw 12vw 8vw 12vw;
+	padding: 12vh 12vw 12vh 12vw;
 	color: var(--white);
 }
 
@@ -176,15 +174,16 @@ button,
 	line-height: 2ch;
 	color: var(--white);
 }
+
 .header-menu h2:hover {
 	line-height: 2ch;
 	color: yellow;
 	transform: translate(10px);
 }
+
 .header-menu a {
 	text-decoration: none;
 	font-family: 'Press Start 2P', cursive;
-	/* font-family: 'Common Pixel', sans-serif; */
 }
 
 .header-main {
@@ -195,11 +194,18 @@ button,
 .header-bottom {
 	flex: 100%;
 	padding: 0px 4vw 0px 4vw;
+	bottom: 2vw;
 	background: var(--lightgrey);
 }
 
 .header-signup {
 	text-align: center;
+}
+
+@media only screen and (min-width: 720px) {
+	.header-top h1 {
+		font-size: 72px;
+	}
 }
 
 /* NAVIGATION */
@@ -249,7 +255,6 @@ button,
 }
 
 .nav-text {
-	/* font-family: 'Press Start 2P', cursive; */
 	font-family: 'Common Pixel', sans-serif;
 	color: var(--white)
 }
@@ -257,7 +262,7 @@ button,
 .routes {
 	color: #bdbdbd;
 	margin-right: 2vw;
-    font-size: 18px;
+    font-size: 16px;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
@@ -283,6 +288,18 @@ button,
     color: #fff !important;
 }
 
+@media only screen and (min-width: 1280px) {
+	.routes {
+		font-size: 24px !important;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	.routes {
+		font-size: 18px !important;
+	}
+}
+
 /*INTRO SECTION*/
 
 #intro {
@@ -297,6 +314,12 @@ button,
 	max-width: 700px;
 	margin: 0 auto;
 	padding: 2vh;
+}
+
+#intro-text h2 {
+	font-family: 'Press Start 2P', cursive !important;
+    font-size: 72px;
+	
 }
 
 #intro-text2 {
