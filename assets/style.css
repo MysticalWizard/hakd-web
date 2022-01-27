@@ -294,6 +294,16 @@ button,
     color: #fff !important;
 }
 
+@media only screen and (min-width: 700px) {
+	.header-top {
+		font-size: 64px
+	}
+	
+	.routes {
+		font-size: 20px !important;
+	}
+}
+
 @media only screen and (min-width: 1280px) {
 	.header-top {
 		font-size: 72px
@@ -301,16 +311,6 @@ button,
 	
 	.routes {
 		font-size: 24px !important;
-	}
-}
-
-@media only screen and (min-width: 700px) {
-	.header-top {
-		font-size: 64px
-	}
-	
-	.routes {
-		font-size: 18px !important;
 	}
 }
 
@@ -466,18 +466,17 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 	padding: 2vh;
 }
 
-#list-of-resources {
+.btn-list {
 	display: flex;
-	flex-wrap: nowrap;
-	overflow-x: auto;
+	flex-wrap: wrap;
+	flex-direction: row;
 	margin: 2vh;
 	padding-top: 2.5vh;
 }
 
 .resource-btn {
 	width: 200px;
-	margin-left: 2vh;
-	margin-right: 2vh;
+	margin: 1vh 2vh 1vh 2vh;
 	flex: 0 0 auto;
 	background: var(--white);
 	padding: 1vh;
@@ -510,17 +509,16 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 #logistics {
 	background: var(--lightblue);
 	width: 100vw;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
 	min-height: 50vh;
 	padding-top: 5vh;
 	padding-bottom: 5vh;
 }
 
 .logistics-title {
+	max-width: 800px;
+    margin: 0 auto;
+    padding: 2vh;
 	font-size: 80px;
-	padding-left: calc(50vw - 400px);
 	color: var(--white);
 }
 
