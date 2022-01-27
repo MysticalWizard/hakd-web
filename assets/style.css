@@ -191,13 +191,6 @@ button,
 	padding: 20px;
 }
 
-.header-bottom {
-	flex: 100%;
-	padding: 0px 4vw 0px 4vw;
-	bottom: 2vw;
-	background: var(--lightgrey);
-}
-
 .header-signup {
 	text-align: center;
 }
