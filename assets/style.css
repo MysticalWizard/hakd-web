@@ -161,7 +161,7 @@ button,
 
 .header-top h1 {
 	font-family: 'Press Start 2P', cursive;
-	font-size: 64px;
+	font-size: 56px;
 }
 
 .header-menu {
@@ -171,7 +171,8 @@ button,
 }
 
 .header-menu h2 {
-	line-height: 2ch;
+	line-height: 1.75ch;
+	font-size: 20px;
 	color: var(--white);
 }
 
@@ -195,9 +196,21 @@ button,
 	text-align: center;
 }
 
+@media only screen and (min-width: 480px) {
+	.header-menu h2 {
+		line-height: 2ch;
+		font-size: 24px;
+	}
+}
+
 @media only screen and (min-width: 720px) {
 	.header-top h1 {
 		font-size: 72px;
+	}
+
+	.header-menu h2 {
+		line-height: 2ch;
+		font-size: 28px;
 	}
 }
 
@@ -282,12 +295,20 @@ button,
 }
 
 @media only screen and (min-width: 1280px) {
+	.header-top {
+		font-size: 72px
+	}
+	
 	.routes {
 		font-size: 24px !important;
 	}
 }
 
 @media only screen and (min-width: 700px) {
+	.header-top {
+		font-size: 64px
+	}
+	
 	.routes {
 		font-size: 18px !important;
 	}
@@ -304,14 +325,14 @@ button,
 }
 
 #intro-text {
-	max-width: 700px;
+	max-width: 720px;
 	margin: 0 auto;
 	padding: 2vh;
 }
 
 #intro-text h2 {
 	font-family: 'Press Start 2P', cursive !important;
-    font-size: 72px;
+    font-size: 64px;
 	
 }
 

@@ -79,5 +79,5 @@ class TextScramble {
 // cycle()
 
   fx.setText(phrases[0])
-  setTimeout(() => { fx.setText(phrases[1]); }, 200);
+  setTimeout(() => { fx.setText(phrases[1]); }, 250);
 //   fx.setText(phrases[1])
