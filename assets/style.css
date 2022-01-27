@@ -412,9 +412,17 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 
 /* VIDEO  */
 
-#main-vid {
+#video {
 	width: 100vw;
-	background: var(--darkgrey);
+	height: 100vh;
+	padding-bottom: 56.25%;
+	background: var(--black);
+}
+
+#video iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 /* RESOURCES */
