@@ -2,8 +2,8 @@
 new FinisherHeader({
   "count": 5,
   "size": {
-    "min": 800,
-    "max": 1500,
+    "min": 200,
+    "max": 800,
     "pulse": 0
   },
   "speed": {
