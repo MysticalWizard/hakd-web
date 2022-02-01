@@ -9,7 +9,7 @@ new FinisherHeader({
   "speed": {
     "x": {
       "min": 0,
-      "max": 0.2
+      "max": 0.25
     },
     "y": {
       "min": 0,
