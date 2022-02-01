@@ -10,13 +10,9 @@
 ::before,
 ::after {
   box-sizing: border-box;
-  /* 1 */
   border-width: 0;
-  /* 2 */
   border-style: solid;
-  /* 2 */
   border-color: #e5e7eb;
-  /* 2 */
 }
 
 html {
@@ -103,7 +99,7 @@ button,
 .center {
     margin: auto;
     text-align: center;
-  }
+}
 
 @media (min-width: 640px) {
   .container {
@@ -446,6 +442,88 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 	height: 100%;
 }
 
+@media only screen and (max-width: 1024px) {
+	#video {
+		height: 75vh;
+	}
+	#video iframe{
+		height: 75%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	#video {
+		height: 50vh;
+	}
+	#video iframe{
+		height: 50%;
+	}
+}
+
+/* COUNTDOWN */
+
+#countdown {
+	background-color: #000;
+    color: #ddd;
+	width: 100vw;
+}
+
+.countdown {
+	font-family: 'Common Pixel', sans-serif;
+    text-align: center;
+	padding: 4vh 0 2vh 
+}
+
+.countdown h1 {
+	font-family: 'Common Pixel', sans-serif;
+    font-weight: normal;
+	font-size: 2.5em;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+.countdown ul {
+	width: 100%;
+	padding:0;
+}
+
+.countdown li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.countdown li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+@media all and (max-width: 768px) {
+    .countdown h1 {
+	  font-size: calc(1.25rem);
+    }
+    
+    .countdown li {
+      font-size: calc(1.125rem * var(--smaller));
+	  padding: 1em .5em 1em .5em;
+    }
+    
+    .countdown li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+}
+
+.welcome {
+    display: none;
+    padding: 1rem;
+}
+
+.welcome span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
 /* RESOURCES */
 
 #resources {
@@ -747,12 +825,10 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
     transition: 0.3s; /* Transition effects on hover (color) */
 }
 
-/* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
 
-/* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
     top: 20px;
