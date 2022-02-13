@@ -2,9 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 @import url('http://fonts.cdnfonts.com/css/common-pixel');
+
+@import url('http://fonts.cdnfonts.com/css/roses-are-ff0000');
 
 *,
 ::before,
@@ -18,7 +18,6 @@
 html {
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
@@ -46,6 +45,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: var(--main-font), sans-serif;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -156,8 +156,9 @@ button,
 }
 
 .header-top h1 {
-	font-family: 'Press Start 2P', cursive;
+	font-family: 'Roses are FF0000', sans-serif;
 	font-size: 56px;
+	letter-spacing: 0.25rem
 }
 
 .header-menu {
@@ -180,7 +181,8 @@ button,
 
 .header-menu a {
 	text-decoration: none;
-	font-family: 'Press Start 2P', cursive;
+	font-family: 'Roses are FF0000', sans-serif;
+	letter-spacing: 0.125rem
 }
 
 .header-main {
@@ -327,8 +329,9 @@ button,
 }
 
 #intro-text h2 {
-	font-family: 'Press Start 2P', cursive !important;
+	font-family: 'Roses are FF0000', sans-serif !important;
     font-size: 64px;
+	letter-spacing: 0.125rem
 	
 }
 
@@ -406,6 +409,7 @@ button,
 }
 
 .step-right h1 {
+	
 	font-size: 40px;
 }
 
@@ -532,10 +536,10 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 }
 
 #resources-title {
-	font-family: var(--title-font);
-	margin-left: 5vh;
+	font-family: 'Roses are FF0000', sans-serif;
+	margin-top: 4vh;
 	color: var(--white);
-	font-size: 80px;
+	font-size: 64px;
 }
 
 #resource-and-title {
@@ -548,7 +552,6 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	margin: 2vh;
 	padding-top: 2.5vh;
 }
 
@@ -593,10 +596,11 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 }
 
 .logistics-title {
+	font-family: 'Roses are FF0000', sans-serif;
 	max-width: 800px;
     margin: 0 auto;
     padding: 2vh;
-	font-size: 80px;
+	font-size: 64px;
 	color: var(--white);
 }
 
@@ -660,7 +664,7 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 .schedule th {
 	text-align: left;
 	transition-duration: 1s;
-	font-family: "Open-Sans-Condensed", sans-serif;
+	font-family: 'Roses are FF0000', sans-serif;
 }
 
 .open:hover {
@@ -680,13 +684,13 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 	color: var(--white);
 	background: var(--red);
 	color: #f3f3f3;
-	font-size: 130%;
+	font-size: 125%;
 	box-shadow: var(--regular-shadow);
 }
 
 .day {
-	font-family: var(--title-font);
-	font-size: 5em;
+	font-family: 'Roses are FF0000', sans-serif;
+	font-size: 4em;
 	line-height: .8;
 	color: var(--red);
 	padding-bottom: .5vh;
@@ -796,8 +800,8 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
     height: 0vh;
     width: 100vw;
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
+    position: fixed;
+    z-index: 1000;
     left: 0;
     top: 0;
     background-color: var(--black); /* Black fallback color */
