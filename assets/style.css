@@ -477,6 +477,11 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 	padding: 4vh 0 2vh 
 }
 
+#countdown a {
+	text-decoration: none;
+	color: #ddd;
+}
+
 .countdown h1 {
 	font-family: 'Common Pixel', sans-serif;
     font-weight: normal;
@@ -556,7 +561,7 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 }
 
 .resource-btn {
-	width: 200px;
+	width: 215px;
 	margin: 1vh 2vh 1vh 2vh;
 	flex: 0 0 auto;
 	background: var(--white);
