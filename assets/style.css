@@ -72,6 +72,9 @@ p {
 	padding: 0;
 }
 
+canvas {
+	overflow: hidden;
+}
 
 button,
 [role="button"] {

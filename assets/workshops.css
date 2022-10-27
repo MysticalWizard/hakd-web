@@ -1,5 +1,8 @@
 @import url('http://fonts.cdnfonts.com/css/roses-are-ff0000');
 
+#navigation {
+    position: absolute !important;
+}
 
 .header {
     background: none !important;
@@ -10,13 +13,14 @@
     font-size: 72px;
     line-height: 1.25em;
     position: absolute;
+    margin: 16vh 0;
     padding: 5vh 0 5vh;
     left: 0;
     right: 0;
     text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 880px) {
     .header h1 {
         font-family: 'Roses are FF0000', sans-serif;
         line-height: 1.25em;
@@ -28,7 +32,7 @@
     }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 640px) {
     .header h1 {
         font-family: 'Roses are FF0000', sans-serif;
         line-height: 1.25em;
