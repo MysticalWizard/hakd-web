@@ -1,4 +1,9 @@
-@import url('http://fonts.cdnfonts.com/css/common-pixel');
+@font-face {
+    font-family: 'Common Pixel';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Common Pixel'), url('/assets/fonts/Common-Pixel.woff') format('woff');
+}
 
 :root {
 	--white: #f3f3f3;

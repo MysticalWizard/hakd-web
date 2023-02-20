@@ -1,33 +1,34 @@
-// HEADER ANIMATION
+// Finisher Header 
 new FinisherHeader({
-  "count": 5,
+  "count": 12,
   "size": {
-    "min": 200,
-    "max": 800,
+    "min": 632,
+    "max": 1500,
     "pulse": 0
   },
   "speed": {
     "x": {
       "min": 0,
-      "max": 0.25
+      "max": 1
     },
     "y": {
-      "min": 0,
-      "max": 0
+      "min": 0.6,
+      "max": 3
     }
   },
   "colors": {
-    "background": "#070f71",
+    "background": "#aaa",
     "particles": [
-      "#6be5ff",
-      "#ff333d",
-      "#ffde00"
+      "#fff81c",
+      "#87f1fe",
+      "#1efe3a",
+      "#ff0a68"
     ]
   },
-  "blending": "lighten",
+  "blending": "overlay",
   "opacity": {
-    "center": 0.15,
-    "edge": 0.05
+    "center": 0.8,
+    "edge": 0
   },
   "skew": 0,
   "shapes": [

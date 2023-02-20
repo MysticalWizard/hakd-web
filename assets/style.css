@@ -2,9 +2,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
-@import url('http://fonts.cdnfonts.com/css/common-pixel');
+@font-face {
+    font-family: 'Common Pixel';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Common Pixel'), url('/assets/fonts/Common-Pixel.woff') format('woff');
+}
 
-@import url('http://fonts.cdnfonts.com/css/roses-are-ff0000');
+@font-face {
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Red Rose'), url('/assets/fonts/RedRose-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roses are FF0000';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roses are FF0000'), url('/assets/fonts/RosesareFF0000.woff') format('woff');
+}
 
 *,
 ::before,
@@ -16,8 +33,6 @@
 }
 
 html {
-	margin: 0;
-	padding: 0;
 	scroll-behavior: smooth;
 }
 
@@ -42,10 +57,12 @@ html {
 }
 
 body {
+	width: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
+    overflow-x: hidden;
 	font-family: var(--main-font), sans-serif;
-	overflow-x: hidden;
 }
 
 h1 {
@@ -105,114 +122,37 @@ button,
 }
 
 @media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+    .container {
+      max-width: 640px;
+    }
 }
 
 @media (min-width: 768px) {
-  .container {
+    .container {
     max-width: 768px;
-  }
+    }
 }
 
 @media (min-width: 1024px) {
-  .container {
+    .container {
     max-width: 1024px;
-  }
+    }
 }
 
 @media (min-width: 1280px) {
-  .container {
+    .container {
     max-width: 1280px;
-  }
+    }
 }
 
 @media (min-width: 1536px) {
-  .container {
+    .container {
     max-width: 1536px;
-  }
+    }
 }
 
-/* HEADER */
-
-.header {
-    align-items: center;
-	background: var(--black) url(/assets/bg.jpg);
-}
-
-.header-align {  
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.header-text {
-	margin: 6vw;
-    color: var(--white);
-}
-
-.header-top {
-	flex: 100%;
-	margin-top: 4vw;
-	text-align: center;
-	color: var(--white);
-}
-
-.header-top h1 {
-	font-family: 'Roses are FF0000', sans-serif;
-	font-size: 56px;
-	letter-spacing: 0.25rem
-}
-
-.header-menu {
-	flex: 50%;
-	padding: 12vh 12vw 12vh 12vw;
-	color: var(--white);
-}
-
-.header-menu h2 {
-	line-height: 1.75ch;
-	font-size: 20px;
-	color: var(--white);
-}
-
-.header-menu h2:hover {
-	line-height: 2ch;
-	color: yellow;
-	transform: translate(10px);
-}
-
-.header-menu a {
-	text-decoration: none;
-	font-family: 'Roses are FF0000', sans-serif;
-	letter-spacing: 0.125rem
-}
-
-.header-main {
-	flex: 50%;
-	padding: 20px;
-}
-
-.header-signup {
-	text-align: center;
-}
-
-@media only screen and (min-width: 480px) {
-	.header-menu h2 {
-		line-height: 2ch;
-		font-size: 24px;
-	}
-}
-
-@media only screen and (min-width: 720px) {
-	.header-top h1 {
-		font-size: 72px;
-	}
-
-	.header-menu h2 {
-		line-height: 2ch;
-		font-size: 28px;
-	}
+.flex {
+    display: flex;
 }
 
 /* NAVIGATION */
@@ -231,14 +171,9 @@ button,
 
 .sexy-flexy{
     display: flex;
-    justify-content: center;
-    align-items: center;
 	vertical-align: middle;
-    width: 100vw;
-}
-
-.nav-alt {
 	justify-content: space-between;
+    width: 100vw;
 }
 
 #nav {
@@ -316,13 +251,26 @@ button,
 	}
 }
 
-/*INTRO SECTION*/
+/* HEADER */
+
+.header {
+    align-items: center;
+}
+
+.welcome {
+	position: absolute;
+	align-items: center;
+	text-align: center;
+	color: var(--darkgrey);
+}
+
+/* INTRO */
 
 #intro {
 	width: 100vw;
 	min-height: 20vh;
 	padding: 5vh 0 5vh 0;
-	color: var(--white);
+	color: var(--darkgrey);
 }
 
 #intro-text {
@@ -350,9 +298,15 @@ button,
 }
 
 #intro p {
-	font-size: 15px;
+	font-size: 16px;
+	margin-top: 0.5em;
 }
 
+.intro-items {
+	width: 50%;
+	float: left;
+	padding: 20px
+}
 
 /* STEPS */
 
@@ -433,13 +387,10 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 	}
 }
 
-
-/* VIDEO  */
+/* VIDEO */
 
 #video {
 	width: 100vw;
-	height: 100vh;
-	padding-bottom: 60%;
 	background: var(--black);
 }
 
@@ -449,46 +400,31 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 	height: 100%;
 }
 
-@media only screen and (max-width: 1024px) {
-	#video {
-		height: 75vh;
-	}
-	#video iframe{
-		height: 75%;
-	}
-}
-@media only screen and (max-width: 768px) {
-	#video {
-		height: 50vh;
-	}
-	#video iframe{
-		height: 50%;
-	}
-}
-
 /* COUNTDOWN */
 
 #countdown {
-	background-color: #000;
-    color: #ddd;
+	background-color: var(--darkgrey);
 	width: 100vw;
+    align-items: center;
+    /* display: flex; */
 }
 
 .countdown {
-	font-family: 'Common Pixel', sans-serif;
+    color: #999;
+    margin: 0 auto;
+	padding: 2vh;
+    font-family: 'Common Pixel', sans-serif;
     text-align: center;
-	padding: 4vh 0 2vh 
-}
-
-#countdown a {
-	text-decoration: none;
-	color: #ddd;
+	margin-left: auto;
+  	margin-right: auto;
+    user-select: none;
 }
 
 .countdown h1 {
+	padding-top: 16px;
 	font-family: 'Common Pixel', sans-serif;
+	font-size: 72px;
     font-weight: normal;
-	font-size: 2.5em;
     letter-spacing: .125rem;
     text-transform: uppercase;
 }
@@ -512,6 +448,10 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 }
 
 @media all and (max-width: 768px) {
+	.countdown {
+		margin-top: auto;
+	}
+
     .countdown h1 {
 	  font-size: calc(1.25rem);
     }
@@ -526,12 +466,12 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
     }
 }
 
-.welcome {
+.countdown-welcome {
     display: none;
     padding: 1rem;
 }
 
-.welcome span {
+.countdown-welcome span {
     font-size: 4rem;
     padding: 0 .5rem;
 }
@@ -592,65 +532,16 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 	font-style: italic;
 }
 
-
-/* LOGISTICS */
-
-#logistics {
-	background: var(--lightblue);
-	width: 100vw;
-	min-height: 50vh;
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-}
-
-.logistics-title {
-	font-family: 'Roses are FF0000', sans-serif;
-	max-width: 800px;
-    margin: 0 auto;
-    padding: 2vh;
-	font-size: 64px;
-	color: var(--white);
-}
-
-.logistics-flex {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	flex-direction: row;
-	width: 100vw;
-}
-
-.logistics-left {
-	width: 400px;
-	height: 60vh;
-}
-
-.logistics-right {
-	padding: 2vh;
-	width: 440px;
-	height: 30vh;
-	color: var(--white);
-	font-size: 20px;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-}
-
-.small-text {
-    text-align: right;
-	font-family: var(--mono-font);
-    font-size: 18px;
-    font-style: italic;
-}
-
-@media only screen and (max-width: 800px) {
-	#logistics-title {
-		margin-left: 10vw;
-		padding-bottom: 5vh;
+@media all and (max-width: 768px) {
+	#resources-title {
+		font-size: 52px;
 	}
-	#logistics-left {
-		display: none;
-    }
+}
+
+@media (min-width: 1024px) {
+    #resources-title {
+		font-size: 56px;
+	}
 }
 
 /* SCHEDULE */
@@ -705,10 +596,76 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 	padding-top: 10vh;
 }
 
-@media only screen and (min-width: 800px) {
+@media all and (max-width: 768px) {
 	.day {
-		margin-left: calc(50vw - 400px);
+		font-size: 3.5em;
 	}
+}
+
+/* LOGISTICS */
+
+#logistics {
+	background: var(--lightblue);
+	width: 100vw;
+	min-height: 50vh;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.logistics-title {
+	font-family: 'Roses are FF0000', sans-serif;
+	max-width: 800px;
+    margin: 0 auto;
+    padding: 2vh;
+	font-size: 64px;
+	color: var(--white);
+}
+
+.logistics-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row;
+	width: 100vw;
+}
+
+.logistics-left {
+	width: 400px;
+	height: 60vh;
+}
+
+.logistics-right {
+	padding: 2vh;
+	width: 440px;
+	/* height: 30vh; */
+	color: var(--white);
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.small-text {
+    text-align: right;
+	font-family: var(--mono-font);
+    font-size: 18px;
+    font-style: italic;
+}
+
+@media all and (max-width: 768px) {
+	.logistics-title {
+		font-size: 56px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#logistics-title {
+		margin-left: 10vw;
+		padding-bottom: 5vh;
+	}
+	#logistics-left {
+		display: none;
+    }
 }
 
 /* FOOTER */
@@ -803,65 +760,10 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
     box-shadow: 0 20 5px rgba(0, 0, 0, .2);
 }
 
-/* The Overlay (background) */
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 0vh;
-    width: 100vw;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    background-color: var(--black); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-    position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-
-@media only screen and (min-width: 1043px){
-    #hamburger{
-        display:none;
-    }
+@media only screen and (min-width: 800px) {
+	.day {
+		margin-left: calc(50vw - 400px);
+	}
 }
 
 @media only screen and (max-width: 1043px){
@@ -869,16 +771,17 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
         display:none;
     }
 
-    #hamburger{
-        margin-left: 5vw;
-        text-align: left;
-    }
-
     #sexy-flexy{
         justify-content:left;
     }
 }
 
-.flex {
-    display: flex;
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
 }

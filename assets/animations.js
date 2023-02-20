@@ -61,8 +61,8 @@ class TextScramble {
 // ——————————————————————————————————————————————————
   
   const phrases = [
-    'HakD 2022',
-    'HakD 2022: Game On',
+    'HakD 2023',
+    'HakD 2023: Game On',
   ]
   
   const el = document.querySelector('.scramble-text')

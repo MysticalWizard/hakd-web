@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-const eventTime = new Date("Feb 25, 2022 17:00:00+08:00").getTime(),
+const eventTime = new Date("Apr 15, 2023 08:00:00+08:00").getTime(),
     second = 1000,
     minute = second * 60,
     hour = minute * 60,
