@@ -476,6 +476,40 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
     padding: 0 .5rem;
 }
 
+/* SIGNUP */
+
+#signup {
+	background-color: #ddd;
+	width: 100vw;
+	padding: 4vh 0vh;
+    align-items: center;
+	flex: auto;
+}
+
+.signup-text {
+    color: var(--darkgrey);
+	text-align: center;
+}
+
+.signup-text h1 {
+    font-family: 'Common Pixel', sans-serif;
+	font-size: 64px;
+}
+
+.signup-text p {
+    margin: 8px 0px;
+}
+
+.signup-img {
+	text-align: center;
+}
+
+@media all and (max-width: 768px) {
+	.signup-text h1 {
+		font-size: 52px;
+	}
+}
+
 /* RESOURCES */
 
 #resources {

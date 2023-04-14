@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/roses-are-ff0000');
+
 #navigation {
     position: absolute !important;
 }
@@ -11,8 +13,8 @@
     font-size: 72px;
     line-height: 1.25em;
     position: absolute;
-    margin: 16vh 0;
-    padding: 5vh 0 5vh;
+    margin: 12vh 0;
+    padding: 5vh 0;
     left: 0;
     right: 0;
     text-align: center;
@@ -81,12 +83,12 @@
     padding: 4vh 0 4vh;
 }
 
-.step-card {
+.wkshop-card {
 	margin: 5vh auto;
 	background: var(--white);
 	max-height: 500px;
 	height: 50vh;
-	max-width: 600px;
+	max-width: 800px;
 	width: 95vw;
 	display: inline-flex;
 	box-shadow: 0 0 20px rgba(0, 0, 0, .2);
@@ -95,7 +97,7 @@
     transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;
 }
 
-.step-card-1 {
+.wkshop-card-1 {
 	margin: 5vh auto;
 	background: var(--white);
 	max-height: 1000px;
@@ -113,7 +115,7 @@
 }
 
 .step-left {
-	max-width: 660px;
+	max-width: 280px;
 	width: 80%;
 	height: 100%;
 }
@@ -127,11 +129,14 @@
 .step-right {
 	overflow-y: scroll;
 	padding: 2vh;
-    border-left: 10px solid var(--red);
 }
 
-div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:nth-child(2){
+.wkshop-card .student{
     border-left: 10px solid var(--blue);
+}
+
+.wkshop-card .teacher{
+    border-left: 10px solid var(--red);
 }
 
 .step-right p {
