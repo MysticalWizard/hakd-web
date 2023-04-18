@@ -1,6 +1,6 @@
 // Finisher Header 
 new FinisherHeader({
-  "count": 12,
+  "count": 10,
   "size": {
     "min": 632,
     "max": 1500,

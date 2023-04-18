@@ -162,24 +162,28 @@ button,
 	background: var(--darkgrey);
 	position: -webkit-sticky;
 	/* Safari */
-	position: sticky;
+	position: fixed;
 	top: 0;
     text-decoration: none;
 	z-index: 1000; 
 	overflow: hidden;
 }
 
+.navbar {
+	position: fixed;
+}
+
 .sexy-flexy{
     display: flex;
 	vertical-align: middle;
 	justify-content: space-between;
-    width: 100vw;
 }
 
 #nav {
 	padding: 0;
     margin: 0;
-	min-height: 6vh;
+	min-height: 64px;
+	max-height: 128px;
     list-style: none;
     flex-wrap: wrap;
 }
@@ -203,9 +207,14 @@ button,
 }
 
 .routes {
+	max-height: 64px;
 	color: #bdbdbd;
 	margin-right: 2vw;
     font-size: 16px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
@@ -269,7 +278,7 @@ button,
 #intro {
 	width: 100vw;
 	min-height: 20vh;
-	padding: 5vh 0 5vh 0;
+	padding: 128px 0 5vh 0;
 	color: var(--darkgrey);
 }
 
@@ -306,6 +315,36 @@ button,
 	width: 50%;
 	float: left;
 	padding: 20px
+}
+
+/* TEAMS BANNER */
+
+#teams-banner {
+	width: 100vw;
+	min-height: 2em;
+	background: var(--grey);
+}
+
+.banner-msg {
+	text-align: center;
+	padding: 2em 0;
+}
+
+.banner-msg h2 {
+	font-family: 'Common Pixel', sans-serif;
+	font-size: 32px;
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+.banner-msg a {
+	color: var(--darkgrey);
+	text-decoration: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 /* STEPS */
@@ -500,6 +539,11 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
     margin: 8px 0px;
 }
 
+.signup-text a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
 .signup-img {
 	text-align: center;
 }
@@ -509,6 +553,17 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 		font-size: 52px;
 	}
 }
+
+.signup-item {
+    align-items: center;
+}
+
+.signup-item a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+
 
 /* RESOURCES */
 
