@@ -160,17 +160,15 @@ button,
 #navigation {
     width: 100vw;
 	background: var(--darkgrey);
-	position: -webkit-sticky;
-	/* Safari */
 	position: fixed;
 	top: 0;
     text-decoration: none;
-	z-index: 1000; 
 	overflow: hidden;
 }
 
 .navbar {
 	position: fixed;
+	z-index: 1000; 
 }
 
 .sexy-flexy{
@@ -433,10 +431,10 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 	background: var(--black);
 }
 
-#video iframe {
-	position: absolute;
+#video video {
 	width: 100%;
 	height: 100%;
+	z-index:-1;
 }
 
 /* COUNTDOWN */
@@ -445,7 +443,6 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 	background-color: var(--darkgrey);
 	width: 100vw;
     align-items: center;
-    /* display: flex; */
 }
 
 .countdown {
@@ -569,12 +566,12 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 
 #resources {
 	width: 100vw;
+	padding: 4vh 0 2vh;
 	background: var(--red);
 }
 
 #resources-title {
 	font-family: 'Roses are FF0000', sans-serif;
-	margin-top: 4vh;
 	color: var(--white);
 	font-size: 64px;
 }
@@ -726,7 +723,6 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 .logistics-right {
 	padding: 2vh;
 	width: 440px;
-	/* height: 30vh; */
 	color: var(--white);
 	font-size: 20px;
 	display: flex;
