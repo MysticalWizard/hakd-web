@@ -451,9 +451,7 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 	padding: 2vh;
     font-family: 'Common Pixel', sans-serif;
     text-align: center;
-	margin-left: auto;
-  	margin-right: auto;
-    user-select: none;
+	user-select: none;
 }
 
 .countdown h1 {
@@ -666,7 +664,6 @@ div.step-card:nth-child(2) > div:nth-child(2), div.step-card:nth-child(3) > div:
 }
 
 .toprow th {
-	color: var(--white);
 	background: var(--red);
 	color: #f3f3f3;
 	font-size: 125%;
