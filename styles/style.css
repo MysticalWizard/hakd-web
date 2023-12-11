@@ -1,3 +1,41 @@
+:root {
+  --bs-navbar-color: var(--blue);
+}
 
+#nav-top {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+#start-info {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.navbar .nav-item + .nav-item::before {
+  content: "||";
+}
+
+#process-cards .card {
+  max-width: 60%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 350px;
+}
+#process-cards .card .card-img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+#process-cards .card .card-body {
+  width: 40%;
+}
+#process-cards .card.card-1 {
+  left: 0;
+}
+#process-cards .card.card-2 {
+  left: 25%;
+}
 
 /*# sourceMappingURL=style.css.map */
