@@ -1,0 +1,154 @@
+@import url('http://fonts.cdnfonts.com/css/roses-are-ff0000');
+
+#navigation {
+    position: absolute !important;
+}
+
+.header {
+    background: none !important;
+    padding-top: 96px;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: 'Roses are FF0000', sans-serif;
+    font-size: 72px;
+    line-height: 1.25em;
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 48px 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .header h1 {
+        font-family: 'Roses are FF0000', sans-serif;
+        line-height: 1.25em;
+        font-size: 56px;
+        /* position: absolute; */
+        padding-top: 64px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .header h1 {
+        font-family: 'Roses are FF0000', sans-serif;
+        line-height: 1.25em;
+        font-size: 48px;
+        /* position: absolute; */
+        padding-top: 64px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+#signup-container {
+    width: 100vw;
+    background: #ddd;
+}
+
+.signup {
+    display: flex;
+    padding: 4vh 0 4vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.signup-item {
+    display: flex;
+    margin: 2vh 0 2vh;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.signup-item img {
+    height: 320px;
+}
+
+#workshop-container {
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	background: var(--lightblue);
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.steps {
+    padding: 4vh 0 4vh;
+}
+
+.wkshop-card {
+	margin: 5vh auto;
+	background: var(--white);
+	max-height: 500px;
+	height: 50vh;
+	max-width: 800px;
+	width: 95vw;
+	display: inline-flex;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+	flex-shrink: 0;
+	color: var(--text);
+    transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;
+}
+
+.wkshop-card-1 {
+	margin: 5vh auto;
+	background: var(--white);
+	max-height: 1000px;
+	height: 45vh;
+	max-width: 720px;
+	width: 95vw;
+	display: inline-flex;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+	flex-shrink: 0;
+	color: var(--text);
+}
+
+.step-right h1 {
+	font-size: 40px;
+}
+
+.step-left {
+	max-width: 280px;
+	width: 80%;
+	height: 100%;
+}
+
+.step-left img {
+	width: 280px;
+	height: 100%;
+	object-fit: cover;
+}
+
+.step-right {
+	overflow-y: scroll;
+	padding: 2vh;
+}
+
+.wkshop-card .student{
+    border-left: 10px solid var(--blue);
+}
+
+.wkshop-card .teacher{
+    border-left: 10px solid var(--red);
+}
+
+.step-right p {
+	padding: 1vh;
+}
+
+@media only screen and (max-width: 575px) {
+	.step-left img {
+		width: 50vw;
+	}
+	.step-right h1 {
+		font-size: 30px;
+	}
+}
