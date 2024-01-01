@@ -18,24 +18,21 @@
 }
 
 #process-cards .card {
-  max-width: 60%;
   margin-top: 25px;
   margin-bottom: 25px;
-  height: 350px;
-}
-#process-cards .card .card-img {
+  min-height: 350px;
   width: 50%;
-  height: 100%;
+}
+#process-cards .card.card-left {
+  margin-left: 0;
+}
+#process-cards .card.card-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+#process-cards .card .card-img-top {
+  max-height: 250px;
   object-fit: cover;
-}
-#process-cards .card .card-body {
-  width: 40%;
-}
-#process-cards .card.card-1 {
-  left: 0;
-}
-#process-cards .card.card-2 {
-  left: 25%;
 }
 
 /*# sourceMappingURL=style.css.map */
