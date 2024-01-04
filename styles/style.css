@@ -1,7 +1,16 @@
 :root {
   --bs-navbar-color: var(--blue);
+  --bs-body-font-size: 17px;
 }
 
+@font-face {
+  font-family: Moontime;
+  src: url("../assets/fonts/MoonTime-Regular.ttf");
+}
+@font-face {
+  font-family: Bebas-Neue;
+  src: url("../assets/fonts/BebasNeue-Regular.ttf");
+}
 #nav-top {
   position: fixed;
   width: 100%;
