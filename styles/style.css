@@ -1,11 +1,54 @@
 :root {
   --bs-navbar-color: var(--blue);
+  --bs-body-font-size: 17px;
+}
+
+@font-face {
+  font-family: Moontime;
+  src: url("../assets/fonts/MoonTime-Regular.ttf");
+}
+@font-face {
+  font-family: Bebas-Neue;
+  src: url("../assets/fonts/BebasNeue-Regular.ttf");
+}
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #nav-top {
   position: fixed;
   width: 100%;
   z-index: 1000;
+}
+
+#title-card .container-fluid {
+  background-color: #230f34;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+#title-card h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+#title-card h1 {
+  margin-bottom: 0;
+}
+#title-card #theme-text {
+  font-family: "Bebas-Neue", sans-serif;
+  color: #e894ff;
+  font-size: calc(4.5rem + 4.5vw);
+  text-shadow: 0 0 10px #970fbd;
+}
+#title-card #theme-overlay-text {
+  margin-top: 40px;
+  font-family: "Moontime", sans-serif;
+  color: #48eaff;
+  font-size: calc(5.5rem + 4.5vw);
+  text-shadow: 0 0 5px #b3fcff;
 }
 
 #start-info {
