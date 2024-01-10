@@ -1,6 +1,10 @@
 :root {
-  --bs-navbar-color: var(--blue);
   --bs-body-font-size: 17px;
+  --c-accent: #C118AD;
+  --c-bg-dark: #230F34;
+  --c-bg-light: #E894FF;
+  --c-text-dark: #212529;
+  --c-text-light: #DEE2E6;
 }
 
 @font-face {
@@ -11,6 +15,21 @@
   font-family: Bebas-Neue;
   src: url("../assets/fonts/BebasNeue-Regular.ttf");
 }
+.bg-darker {
+  background-color: var(--c-text-dark);
+  color: var(--c-text-light);
+}
+
+.bg-l {
+  background-color: var(--c-bg-light);
+  color: var(--c-text-dark);
+}
+
+.bg-d {
+  background-color: var(--c-bg-dark);
+  color: var(--c-text-light);
+}
+
 .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -26,7 +45,6 @@
 }
 
 #title-card .container-fluid {
-  background-color: #230f34;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -57,17 +75,8 @@
 }
 
 #process-cards .card {
-  margin-top: 25px;
-  margin-bottom: 25px;
   min-height: 350px;
-  width: 50%;
-}
-#process-cards .card.card-left {
-  margin-left: 0;
-}
-#process-cards .card.card-right {
-  margin-left: auto;
-  margin-right: 0;
+  max-width: 40%;
 }
 #process-cards .card .card-img-top {
   max-height: 250px;
