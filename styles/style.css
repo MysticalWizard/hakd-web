@@ -1,10 +1,10 @@
 :root {
   --bs-body-font-size: 17px;
   --c-accent: #C118AD;
-  --c-bg-dark: #230F34;
-  --c-bg-light: #E894FF;
-  --c-text-dark: #212529;
-  --c-text-light: #DEE2E6;
+  --bs-primary-bg-subtle: #230F34;
+  --bs-secondary-bg-subtle: #E894FF;
+  --bs-body-bg: #212529;
+  --bs-body-color: #DEE2E6;
 }
 
 @font-face {
@@ -15,21 +15,6 @@
   font-family: Bebas-Neue;
   src: url("../assets/fonts/BebasNeue-Regular.ttf");
 }
-.bg-darker {
-  background-color: var(--c-text-dark);
-  color: var(--c-text-light);
-}
-
-.bg-l {
-  background-color: var(--c-bg-light);
-  color: var(--c-text-dark);
-}
-
-.bg-d {
-  background-color: var(--c-bg-dark);
-  color: var(--c-text-light);
-}
-
 .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -43,10 +28,20 @@
   width: 100%;
   z-index: 1000;
 }
+#nav-top nav.navbar {
+  --bs-navbar-active-color: #DEE2E6;
+  --bs-navbar-disabled-color: #8a98a6;
+  --bs-navbar-brand-color: #DEE2E6;
+}
+
+section {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
 
 #title-card .container-fluid {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 #title-card h3 {
   color: white;
@@ -77,6 +72,7 @@
 #process-cards .card {
   min-height: 350px;
   max-width: 40%;
+  --bs-card-bg: #230F34;
 }
 #process-cards .card .card-img-top {
   max-height: 250px;
