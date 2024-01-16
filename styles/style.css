@@ -69,12 +69,12 @@ section {
   padding-bottom: 80px;
 }
 
-#process-cards .card {
+#process .card {
   min-height: 350px;
   max-width: 40%;
   --bs-card-bg: #230F34;
 }
-#process-cards .card .card-img-top {
+#process .card .card-img-top {
   max-height: 250px;
   object-fit: cover;
 }
