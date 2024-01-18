@@ -82,12 +82,49 @@ section {
 //}
 
 #process .card {
+    padding: 0;
+    width: 40%;
+    min-width: 500px;
     min-height: 350px;
-    max-width: 40%;
     --bs-card-bg: #230F34;
 
     .card-img-top {
-        max-height: 250px;
+        width: 100%;
+        max-height: 300px;
         object-fit: cover;
     }
+
+    .card-body {
+        padding: 24px;
+    }
+}
+
+#logistics {
+    #logistics-map {
+        height: 500px;
+        max-width: 45%;
+    }
+    #logistics-right {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 45%;
+    }
+}
+
+#schedule {
+    .col {
+        max-width: 500px;
+        min-width: 400px;
+    }
+    table {
+        th {
+            background-color: var(--c-accent);
+            color: var(--bs-light);
+        }
+        td {
+            background-color: var(--bs-primary-bg-subtle);
+            color: var(--bs-light);
+        }
+    }
+    color: var(--bs-dark);
 }
