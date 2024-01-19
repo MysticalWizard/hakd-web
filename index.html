@@ -51,23 +51,24 @@
   </nav>
 </header>
 
-<!-- Margin for navbar -->
-<div class="bg-dark" style="height: 56px;"></div>
-
 <!-- Title card -->
-<section id="title-card" style="background-color: #000000">
-  <div class="container-fluid">
+<section id="title-card" class="p-0">
+  <div id="title-bg" class="position-fixed">
+    <img src="assets/img/vaporwave.gif" alt="Animated vapor wave background"/>
+    <div></div>
+  </div>
+  <div class="container-fluid d-flex align-items-center">
     <div class="container d-flex flex-column align-items-center">
       <h3>HakD 2024:</h3>
-      <h1 id="theme-overlay-text" class="position-absolute unselectable">Need For Speed</h1>
-      <h1 id="theme-text">Need For Speed</h1>
+      <h1 id="theme-overlay-text" class="position-absolute">Need For Speed</h1>
+      <h1 id="theme-text" class="unselectable">Need For Speed</h1>
     </div>
   </div>
 </section>
 
 <section id="start-info" class="bg-primary-subtle">
   <div class="container">
-    <h1>Welcome to HakD!</h1>
+    <h1 class="display-2">Welcome to HakD!</h1>
 
     <p>HakD is a hackathon for everyone – people just like you, the person that sits next to you in history, and the other guy who is eating Pringles – yes, all of you are invited!</p>
     <p>Hackathons (contrary to teachers’ concerns) are not events that encourage people to become Neo and hack into the Matrix. Rather, they are about challenging yourself to push the fundamental boundaries of what you can truly create.</p>
@@ -83,7 +84,7 @@
       <div class="card">
         <img class="card-img-top" src="assets/img/register-min.jpeg" alt=""/>
         <div class="card-body">
-          <h3 class="card-title">1 - Register</h3>
+          <h2 class="card-title">1 - Register</h2>
           <p class="card-text">To sign up for HakD, speak to your local CS teacher or equivalent and get in a pair with someone from your school. When you arrive at the event, you will receive a swag bag full of HakD themed goodies! We will group your pair with another pair from a different school to form a team of 4 students.</p>
         </div>
       </div>
@@ -115,9 +116,11 @@
 <!-- Logistics  -->
 <section id="logistics" class="bg-primary-subtle">
   <div class="container">
-    <h1>Logistics</h1>
+    <h1 class="display-4">Logistics</h1>
     <div class="row row-cols-2 justify-content-center">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1705.686171893009!2d121.5849250816147!3d31.23811423995541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b2765f28bf15cd%3A0x9e4ade311a026fcb!2sDulwich%20College%20Shanghai!5e0!3m2!1sen!2sus!4v1567328690264!5m2!1sen!2sus" style="border:0;" allowfullscreen="" id="logistics-map"></iframe>
+      <div id="logistics-map" class="bg-dark p-0">
+        <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1705.686171893009!2d121.5849250816147!3d31.23811423995541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b2765f28bf15cd%3A0x9e4ade311a026fcb!2sDulwich%20College%20Shanghai!5e0!3m2!1sen!2sus!4v1567328690264!5m2!1sen!2sus" allowfullscreen=""></iframe>
+      </div>
       <div id="logistics-right">
         <h3>Location</h3>
         <p>266 Lan An Rd, Jinqiao, Pudong, Shanghai
@@ -146,10 +149,10 @@
 <!-- Schedule -->
 <section id="schedule" class="bg-secondary-subtle">
   <div class="container">
-    <h1>Schedule</h1>
+    <h1 class="display-4">Schedule</h1>
     <div class="row row-gap-5 justify-content-center">
       <div class="col">
-        <h2>Saturday</h2>
+        <h2>Day 1 - Saturday 16th march</h2>
         <table class="table">
           <tr>
             <th>Time</th>
@@ -216,7 +219,7 @@
         </table>
       </div>
       <div class="col">
-        <h2>Sunday</h2>
+        <h2>Day 2 - Sunday 17th March</h2>
         <table class="table">
           <tr>
             <th>Time</th>
@@ -269,7 +272,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="d-flex justify-content-center py-4">
+<footer class="d-flex justify-content-center py-5">
   <img src="assets/img/hakd-logo.png" alt="Tech Ambassador" height="48">
   <div class="vr mx-3"></div>
   <img src="assets/img/tech-ambassadors.png" alt="Tech Ambassador" height="48">
