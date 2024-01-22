@@ -11,19 +11,18 @@
 </head>
 <body>
 <!-- Navbar -->
-<header id="nav-top">
+<header id="nav-top" data-bs-theme="dark">
   <nav class="navbar sticky-top navbar-expand-md bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand">
         <img src="assets/img/hakd-logo-2024.svg" alt="Tech Ambassador" height=40 class="mx-2">
         HakD 2024: Need For Speed
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse flex-column align-items-end">
-        <ul class="navbar-nav p-2 mb-md-0">
+      <div id="nav-collapse" class="collapse navbar-collapse flex-row justify-content-end">
+        <ul class="navbar-nav p-2 mb-md-0 flex-row justify-content-between">
           <li class="nav-item">
             <a class="nav-link active p-0 ps-2 pe-2" aria-current="page" href="#">Home</a>
           </li>
@@ -46,23 +45,23 @@
             <a class="nav-link disabled p-0 ps-2 pe-2" aria-disabled="true">Scenarios</a>
           </li>
         </ul>
+        <div id="signup-button" class="align-self-stretch d-flex align-items-center m-1 px-2">
+          <a href="#" class="nav-link">Sign up</a>
+        </div>
       </div>
     </div>
   </nav>
 </header>
 
 <!-- Title card -->
+<div id="title-bg" class="position-fixed">
+  <img style="height: 800px;" src="assets/img/vaporwave.gif" alt="Animated vapor wave background"/>
+</div>
 <section id="title-card" class="p-0">
-  <div id="title-bg" class="position-fixed">
-    <img src="assets/img/vaporwave.gif" alt="Animated vapor wave background"/>
-    <div></div>
-  </div>
-  <div class="container-fluid d-flex align-items-center">
-    <div class="container d-flex flex-column align-items-center">
-      <h3>HakD 2024:</h3>
-      <h1 id="theme-overlay-text" class="position-absolute">Need For Speed</h1>
-      <h1 id="theme-text" class="unselectable">Need For Speed</h1>
-    </div>
+  <h3 class="position-absolute w-100 text-center">HakD 2024:</h3>
+  <div class="container d-flex flex-column align-items-center">
+    <h1 id="theme-overlay-text" class="position-absolute text-center">Need For Speed</h1>
+    <h1 id="theme-text" class="unselectable text-center">Need For Speed</h1>
   </div>
 </section>
 
@@ -79,30 +78,30 @@
 
 <!-- Steps -->
 <section id="process" class="bg-secondary-subtle">
-  <div id="cards-container" class="container">
-    <div class="row row-gap-5 column-gap-5 justify-content-center">
-      <div class="card">
+  <div id="cards-container" class="container-fluid">
+    <div class="row row-cols-lg-2 row-gap-5 column-gap-5 justify-content-center">
+      <div class="card my-3">
         <img class="card-img-top" src="assets/img/register-min.jpeg" alt=""/>
         <div class="card-body">
           <h2 class="card-title">1 - Register</h2>
           <p class="card-text">To sign up for HakD, speak to your local CS teacher or equivalent and get in a pair with someone from your school. When you arrive at the event, you will receive a swag bag full of HakD themed goodies! We will group your pair with another pair from a different school to form a team of 4 students.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card my-3">
         <img class="card-img-top" src="assets/img/workshops-min.jpeg" alt=""/>
         <div class="card-body">
           <h2 class="card-title">2 - Workshops</h2>
           <p class="card-text">On the first day of the event, you will participate in tech-related workshops! You will join the workshops and learn new skills like coding robots, hacking and building robots. If you're feeling tactical, you can coordinate which workshops to attend as a group so you can combine the knowledge from all the workshops in the next step!</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card my-3">
         <img class="card-img-top" src="assets/img/projects-min.jpeg" alt=""/>
         <div class="card-body">
           <h2 class="card-title">3 - Projects</h2>
           <p class="card-text">You will also be given a set of scenarios based on our theme of Need for Speed, which will be revealed during the Opening Ceremony. As a team, you will pick a scenario and work on solving it through technology. Your prototype can involve software, hardware, or both!</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card my-3">
         <img class="card-img-top" src="assets/img/pitch-min.jpeg" alt=""/>
         <div class="card-body">
           <h2 class="card-title">4 - Present!</h2>
@@ -117,10 +116,7 @@
 <section id="logistics" class="bg-primary-subtle">
   <div class="container">
     <h1 class="display-4">Logistics</h1>
-    <div class="row row-cols-2 justify-content-center">
-      <div id="logistics-map" class="bg-dark p-0">
-        <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1705.686171893009!2d121.5849250816147!3d31.23811423995541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b2765f28bf15cd%3A0x9e4ade311a026fcb!2sDulwich%20College%20Shanghai!5e0!3m2!1sen!2sus!4v1567328690264!5m2!1sen!2sus" allowfullscreen=""></iframe>
-      </div>
+    <div class="row flex-row-reverse row-cols-lg-2 justify-content-center">
       <div id="logistics-right">
         <h3>Location</h3>
         <p>266 Lan An Rd, Jinqiao, Pudong, Shanghai
@@ -133,6 +129,9 @@
         <p>Ramada Plaza Hotel, 18 Xin Jinqiao Road, Pudong, Shanghai 201206</p>
         <h3>Contact</h3>
         <p><a href="mailto:hakd.shanghaipudong@dulwich.org">hakd.shanghaipudong@dulwich.org</a></p>
+      </div>
+      <div id="logistics-map" class="bg-dark p-0">
+        <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1705.686171893009!2d121.5849250816147!3d31.23811423995541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b2765f28bf15cd%3A0x9e4ade311a026fcb!2sDulwich%20College%20Shanghai!5e0!3m2!1sen!2sus!4v1567328690264!5m2!1sen!2sus" allowfullscreen=""></iframe>
       </div>
     </div>
   </div>
@@ -277,7 +276,7 @@
   <div class="vr mx-3"></div>
   <img src="assets/img/tech-ambassadors.png" alt="Tech Ambassador" height="48">
 </footer>
-<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>

@@ -10,12 +10,12 @@
 
 @font-face {
     font-family: Moontime;
-    src: url("../assets/fonts/MoonTime-Regular.ttf");
+    src: local(Moontime), url("../assets/fonts/MoonTime-Regular.ttf");
 }
 
 @font-face {
     font-family: Bebas-Neue;
-    src: url("../assets/fonts/BebasNeue-Regular.ttf");
+    src: local(Bebas Neue), url("../assets/fonts/BebasNeue-Regular.ttf");
 }
 
 h1, h2, h3 {
@@ -40,12 +40,24 @@ h1, h2, h3 {
         font-size: 1.3rem;
         --bs-navbar-brand-font-size: 1.4rem;
 
-        --bs-navbar-active-color: var(--bs-secondary-bg-subtle);
-        --bs-navbar-disabled-color: #8a98a6;
-        --bs-navbar-brand-color: var(--bs-light);
-        --bs-navbar-brand-hover-color: var(--bs-light);
-        --bs-navbar-color: var(--bs-light);
-        --bs-navbar-hover-color: var(--bs-secondary-bg-subtle);
+        --bs-navbar-active-color: #E894FF;
+
+        .navbar-nav .nav-link.active {
+            transition: all 0.5s;
+
+            &:hover {
+                text-shadow: 0 0 1px #970fbd, 0 0 2px #970fbd, 0 0 3px #970fbd, 0 0 5px #e894ff, 0 0 6px #e894ff;
+            }
+        }
+
+        #signup-button {
+            background-color: var(--c-accent);
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: var(--bs-navbar-active-color);
+            }
+        }
     }
 }
 
@@ -54,34 +66,34 @@ section {
     padding-top: 80px;
 }
 
-
-#title-card {
-    #title-bg {
+#title-bg {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    img {
         width: 100%;
-        z-index: -10;
-        img {
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.6);
+        object-fit: cover;
+        object-position: center;
+        @media (min-width: 1200px) {
+            margin-top: calc(20vw - 0.2*1200px);
         }
     }
-    .container-fluid {
-        padding-top: 120px;
-        padding-bottom: 120px;
-        height: 600px;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+    }
+}
+
+#title-card {
+    .container {
+        padding-top: 90px + 160px;
+        padding-bottom: 90px + 50px;
     }
     h3 {
         color: var(--bs-light);
-        margin-bottom: 10px;
-    }
-    h1 {
-        margin-bottom: 0;
+        margin-top: 160px;
     }
     #theme-text {
         font-family: "Bebas-Neue", sans-serif;
@@ -90,10 +102,10 @@ section {
         text-shadow: 0 0 10px #970fbd;
     }
     #theme-overlay-text {
-        margin-top: 25px;
+        margin-top: -10px;
         font-family: "Moontime", sans-serif;
         color: #48eaff;
-        font-size: calc(5.5rem + 4.75vw);
+        font-size: calc(4.9rem + 5.5vw);
         text-shadow: 0 0 5px #b3fcff;
     }
 }
@@ -103,22 +115,15 @@ section {
     padding-bottom: 80px;
 
     .container {
-        max-width: 960px;
+        max-width: 800px;
     }
 }
-
-//.navbar {
-//    .nav-item + .nav-item::before {
-//        content: "||";
-//    }
-//}
 
 #process .card {
     padding: 0;
     --bs-card-border-color: var(--c-accent);
     --bs-card-border-width: 10px;
-    width: 40%;
-    min-width: 500px;
+    max-width: 500px;
     min-height: 350px;
     --bs-card-bg: #230F34;
 
@@ -136,12 +141,11 @@ section {
 #logistics {
     #logistics-map {
         height: 500px;
-        max-width: 40%;
+        max-width: 500px;
     }
     #logistics-right {
-        padding-left: 50px;
-        padding-right: 50px;
-        max-width: 45%;
+        padding: 50px;
+        max-width: 550px;
     }
 }
 
