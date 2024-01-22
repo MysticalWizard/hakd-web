@@ -44,6 +44,13 @@ h1, h2, h3 {
   --bs-navbar-hover-color: var(--bs-secondary-bg-subtle);
 }
 
+.nav-link{
+  transition: all 1s;
+}
+.nav-link:hover {
+  text-shadow: 0 0 1px #970fbd, 0 0 2px #970fbd, 0 0 3px #970fbd, 0 0 5px #e894ff, 0 0 6px #e894ff;
+}
+
 section {
   padding-bottom: 80px;
   padding-top: 80px;
